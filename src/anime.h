@@ -57,7 +57,7 @@ struct season
 	string name = "some shit";
 	time_season time = time_season::fall;
 	int episodes = 0;
-	anime_status anime_status = anime_status::ongoing;
+	anime_status status = anime_status::ongoing;
 
 	void print() const;
 };

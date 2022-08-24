@@ -61,14 +61,14 @@ void season::print() const
 	print_status(status);
 }
 
-anime(const string& new_name, bitmask new_genres, const string& new_author)
+anime::anime(const string& new_name, bitmask new_genres, const string& new_author)
 {
 	name = new_name;
 	genres = new_genres;
 	author = new_author;
 }
 
-void print() const
+void anime::print() const
 {
 	std::cout << "Name: " << name
 		<< "\nAuthor: " << author
@@ -81,7 +81,7 @@ void print() const
 	}
 }
 
-void add_season(const string& new_name, time_season new_time, int new_episodes, anime_status new_status)
+void anime::add_season(const string& new_name, time_season new_time, int new_episodes, anime_status new_status)
 {
 	season season(new_name, new_time, new_episodes, new_status);
 	seasons.push_back(season);

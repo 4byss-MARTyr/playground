@@ -61,11 +61,12 @@ void season::print() const
 	print_status(status);
 }
 
-anime::anime(const string& new_name, bitmask new_genres, const string& new_author)
+anime::anime(const string& new_name, bitmask new_genres, const string& new_author, const string& new_studio)
 {
 	name = new_name;
 	genres = new_genres;
 	author = new_author;
+	studio = new_studio;
 }
 
 void anime::print() const

@@ -65,7 +65,7 @@ struct season
 struct anime
 {
 	anime() = default;
-	anime(const string& new_name, bitmask new_genres, const string& new_author);
+	anime(const string& new_name, bitmask new_genres, const string& new_author, const string& new_studio);
 
 	string name = "some shit";
 	bitmask genres = 0;
